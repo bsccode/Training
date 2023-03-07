@@ -1,0 +1,40 @@
+Assessment 3
+
+Robot Search Engine
+
+
+Write Program Which uses STRUCTS POINTERS and ARRAYS to "search" and add to a DATABASE of ROBOTS to choose for the race determined by the relative SPEED score.
+
+Typedef Struct and variables to be used in struct for ROBOT
+
+Welcome User and print available robots
+
+Allow User to choose if they would like to add a custom robot(Object to struct array) to the Table
+
+If statement which chooses to build robot or not.
+
+IF Build is true Run "Create Robot" Function and point result to array.
+
+Else run the rest of the program.
+
+Import Speed Function from previous Workshop and edit to suit task.
+
+Run speed function which asks for INPUT 2 Variables (FinishTime (in seconds) & Distance (in Meters))
+
+(If Variables not within acceptable parameters LOOP INPUT until parameters correct)
+
+INPUT 1 Variable (INT) of STRENGTH (between 0-100)
+
+(If Variables not within acceptable parameters LOOP INPUT until parameters correct)
+
+Do Math Equation
+
+OUTPUT Trial Speed score
+
+Compare Speed Score with Preexisting Robots and omit Robots which are not high enough Speed Score
+
+OUTPUT Remaining options
+
+SET QUIT and RESET parameters using INT and LOOP Functions
+
+TERMINATE PROGRAM

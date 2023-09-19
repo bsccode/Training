@@ -1,0 +1,22 @@
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    border: 1px solid black;
+    height: 50px;
+}
+
+.headerlogo{
+    flex: auto;
+    border: 1px solid black;
+}
+
+.links-container{
+    display: flex;
+    flex: auto;
+    justify-content: space-between;
+    border: 1px solid black;
+}

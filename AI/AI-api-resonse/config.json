@@ -14,7 +14,7 @@
             "Oobabooga": {
                 "endpoint": "http://10.0.0.17:5000/v1/chat/completions",
                 "mode": "chat-instruct",
-                "character": "Cia",
+                "character": "Example",
                 "messages": "history"
             }
         },

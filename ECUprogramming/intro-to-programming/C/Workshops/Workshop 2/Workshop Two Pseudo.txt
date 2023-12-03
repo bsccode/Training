@@ -1,0 +1,32 @@
+Assessment 2
+
+Robot Competition
+
+Write Program which determines combat effectiveness of a robot using 3 parameters
+and simulate 100 fights against a "Human" opponent
+
+DEFINE 3  FUNCTIONS to determine SPEED - STRENGTH - COMBATSCORE
+
+INPUT 2 Variables (FinishTime (in seconds) & Distance (in Meters))
+
+(If Variables not within acceptable parameters LOOP INPUT until parameters correct)
+
+INPUT 1 Variable (INT) of STRENGTH (between 0-100)
+
+(If Variables not within acceptable parameters LOOP INPUT until parameters correct)
+
+Do Math Equation
+
+SET hard limits to remove false answers
+
+OUTPUT “Percentage of chance of ROBOT winning”
+
+Run RANDOM NUMBER to simulate fights
+
+COUNT amount of wins the Robot and the Human have.
+
+OUTPUT number of victories
+
+SET QUIT and RESET parameters using INT and LOOP Functions
+
+TERMINATE PROGRAM

@@ -1,0 +1,41 @@
+Workshop One
+
+Task One
+
+Write a Program to Print "Hello World" onto the screen (Complete)
+
+TERMINATE PROGRAM
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - 
+
+Task Two
+
+Write Conversion Program FROM km/h to m/s
+
+INPUT speed in km/h
+
+DO MATH
+
+OUTPUT speed in m/s on screen
+
+TERMINATE PROGRAM 
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Assessment 1
+
+Write Program which determines average speed of a racer
+
+INPUT 2 Variables (FinishTime (in seconds) & Distance (in Meters))
+
+(If Variables not within acceptable parameters LOOP INPUT until parameters correct) 
+
+Do Math Equation
+
+OUTPUT “The robot has an average speed of <s> meters per second.”
+
+SET QUIT and RESET parameters using INT and LOOP Functions
+
+TERMINATE PROGRAM
+
+  

@@ -1,0 +1,55 @@
+#include <cs50.h>
+#include <stdio.h>
+
+bool prime(int number);
+
+int main(void)
+{
+    int min;
+    do
+    {
+        min = get_int("Minimum: ");
+    }
+    while (min < 1);
+
+    int max;
+    do
+    {
+        max = get_int("Maximum: ");
+    }
+    while (min >= max);
+
+    for (int i = min; i <= max; i++)
+    {
+        if (prime(i))
+        {
+            printf("%i\n", i);
+        }
+    }
+}
+
+bool prime(int number)
+{
+    if (number <= 1)
+    {
+        return false;
+    }
+    if (number == 2 || number == 3)
+    {
+        return true;
+    }
+
+    for (int i = 2; i < number; i++)
+    {
+        if (number % i == 0)
+        {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+// adds if statement which uses modulo to check if number is divisible by 2 then not a prime.
+// for loop which iterates over if the number and any leading up to it are divisible by 2 or it, false if true
+// otherwise returns true aka prime

@@ -1,4 +1,4 @@
-/*#include <cs50.h>
+#include <cs50.h>
 #include <stdio.h>
 
 int main(void)
@@ -21,17 +21,6 @@ int main(void)
         {
             printf("#");
         }
-
-        //ADDED from mario-less to add mandatory 2 spaces
-
-        printf("  ");
-
-        //ADDED from mario-less to "reflect" pyramid
-
-        for (int l = x - i ; l <= x; l++)
-        {
-            printf("#");
-        }
         printf("\n");
     }
 }
@@ -40,4 +29,5 @@ int main(void)
 //  print pyramid of squares depending on input using for loop
 //  print loop spaces using counter and nested for loop
 //  print loop # using same method as above
-//  leave nested for loop and add new line, repeat original loop.*/
+//  leave nested for loop and add new line, repeat original loop.
+

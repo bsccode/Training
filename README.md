@@ -1,2 +1,5 @@
-# git_test
-Testing Github and Learning How to Code So here are all my projects, all of these will be works in progress. Latest test edit. Latest
+# Training
+
+This is a holding Repo for any training or projects completed during training.
+
+Purely for archival purposes

@@ -1,0 +1,42 @@
+a {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  .nav-link {
+    color: blue;
+  }
+  
+  .nav-link:hover {
+    text-decoration: blue;
+    cursor: pointer;
+    text-decoration: underline bold;
+  }
+  
+  .btn {
+    background-color: blue;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    padding: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: red;
+    color: blue;
+  }
+  
+  .btn:active {
+    font-size: 30px;
+    color: black;
+    background-color: white;
+  }
+  

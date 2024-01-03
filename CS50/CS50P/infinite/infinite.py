@@ -1,8 +1,5 @@
-i=3
-count = 0
+i = 3
 count = 2
-while i != 0 :
-    print("lol")
-    count = count - count
-    print(count)
-    i =+
+while i != 0:
+    print(i)
+    i -= 1

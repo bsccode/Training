@@ -5,46 +5,43 @@
 
 def date():
     while True:
-            string = input("Date: ").lower().replace(',', '').replace(' ', '/')
-            m,d,y =  string.split('/')
-            try:
-                d,y = int(d), int(y)
-                if d < 1 or d > 31:
-                    raise ValueError
-            except ValueError:
-                continue
-            if m == type(str):
-                match m:
-                    case "january":
-                        m = 1
-                    case "february":
-                        m = 2
-                    case "march":
-                        m = 3
-                    case "april":
-                        m = 4
-                    case "may":
-                        m = 5
-                    case "june":
-                        m = 6
-                    case "july":
-                        m = 7
-                    case "august":
-                        m = 8
-                    case "september":
-                        m = 9
-                    case "october":
-                        m = 10
-                    case "november":
-                        m = 11
-                    case "december":
-                        m = 12
-                    case _:
-                        continue
-            if m > 12 or m < 1:
-                raise ValueError
-            m = int(m)
-            print(f"{y}-{m:02}-{d:02}")
-date()
+        string = input("Date: ").lower().replace(',', '').strip()
 
+        # Split the input differently based on presence of slashes
+        if '/' in string:
+            parts = string.split('/')
+            if len(parts) != 3:
+                print("Invalid date. Please try again.")
+                continue
+            month, day, year = int(parts[0]), int(parts[1]), int(parts[2])
+        else:
+            parts = string.split()
+            if len(parts) != 3:
+                print("Invalid date. Please try again.")
+                continue
+            day, month, year = int(parts[0]), parts[1], int(parts[2])
+
+            # Convert month to number if it's a word
+            if month.isalpha():
+                months = ["january", "february", "march", "april", "may", "june",
+                          "july", "august", "september", "october", "november", "december"]
+                if month in months:
+                    month = months.index(month) + 1
+                else:
+                    print("Invalid month name. Please try again.")
+                    continue
+
+        # Check if day and month are valid
+        try:
+            if day < 1 or day > 31 or month < 1 or month > 12:
+                raise ValueError
+
+            # Print the date in YYYY-MM-DD format
+            print(f"{year}-{month:02d}-{day:02d}")
+            break
+
+        except ValueError:
+            print("Invalid date. Please try again.")
+
+date()
 
